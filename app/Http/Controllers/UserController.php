@@ -93,7 +93,7 @@ class UserController extends Controller
   public function everything()
   {
     try{
-      $user = $this->user->with('item')->get();
+      $user = $this->user->with('Items')->get();
       return $user;
     }
     catch(Exception $ex){
